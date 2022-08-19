@@ -1,0 +1,27 @@
+<template>
+  <main>
+    <app-header></app-header>
+    <Nuxt />
+    <app-footer></app-footer>
+  </main>
+</template>
+
+<script>
+import AppHeader from "~/components/AppHeader.vue";
+import AppFooter from "~/components/AppFooter.vue";
+export default {
+  name: "DefaultLayout",
+  components: { AppHeader, AppFooter },
+};
+</script>
+
+<style lang="scss" scoped>
+@import url("https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;500;600;700&family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+main {
+  font-family: "DynaPuff", cursive !important;
+}
+
+.title {
+  font-family: "DynaPuff", cursive;
+}
+</style>
